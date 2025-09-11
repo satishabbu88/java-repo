@@ -1,0 +1,38 @@
+	
+DATA STRUCTURE
+
+Given a linked list where in addition to the next pointer, each node has a child pointer, which may or may not point to a separate list. 
+These child lists may have one or more children of their own, and so on, to produce a multilevel data structure, as shown in figure. 
+
+You are given the head of the first level of the list. 30min
+
+TODO:
+Flatten the list so that all the nodes appear in a single-level linked list. 
+You need to flatten the list in way that all nodes at the first level should come first, then nodes of second level, and so on.
+
+Expected result: 10->5->12->7->11->4->20->13->17->6->2->16->9->8->3->19->15
+
+[Solution]
+
+
+DESIGN PATTERNS 5min
+
+Question: 	Which design pattern suggests a request to pass through multiple classes but only relevant classes 
+			should execute the request?
+[Answer]:  Strategy
+
+Question: 	Which design pattern let the user add new functionality to an existing object without altering the 
+			structure of the object?
+[Answer]:   Decorator
+
+Question:	Which design pattern is useful whenever we have to pass data with multiple attributes in a 
+			single shot from a client to a server?
+[Answer]:  Data Transfer Object
+	
+Question: 	Implement a simple calculator with below requirement. Pick a design pattern for your solution and explain why? 25min
+Requirements:
+- Input(s) to be taken from user
+- Should support minimum +, -, * and / operations
+- Should be extensible to support more operations in future
+
+[Solution]: 
