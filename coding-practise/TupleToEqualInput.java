@@ -1,6 +1,8 @@
 package org.example;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class TupleToEqualInput {
     public static void main(String[] args) {
@@ -18,6 +20,17 @@ public class TupleToEqualInput {
             }
             break;
         }
-        System.out.println(Arrays.toString(tuple));
+        //System.out.println(Arrays.toString(tuple));
+
+        // Using HashSet
+        Set<Integer> seen = new HashSet<>();
+        for(int num: array){
+            int complement = input - num;
+            if(seen.contains(complement)){
+                System.out.println("found: "+ num + " & complement: "+complement);
+                return;
+            }
+            seen.add(num);
+        }
     }
 }
