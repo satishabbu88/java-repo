@@ -171,6 +171,7 @@ public class Java8SampleCodingPractise {
 
         //24) Given a list of strings, find out those strings which start with a number?
         List<String> numStrings = Arrays.asList("One", "2wo", "3hree", "Four", "5ive", "Six");
+		//numStrings.stream().filter(s->s.substring(0,1).matches("[0-9]")).toList();
 
 
         //25) How do you extract duplicate elements from an array?
